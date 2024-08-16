@@ -90,41 +90,52 @@ class Dialogue extends StatelessWidget {
             ),
           ),
           SizedBox(height: 325,),
-          Padding(
-            padding: const EdgeInsets.only(left: 15, right: 60),
-            child: Container(
-              height: 35,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: Colors.grey[300],
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Row(children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 10),
-                  child: Icon(Icons.emoji_emotions_outlined, size:20,color:  Colors.red,),
-                ),
-                SizedBox(width: 20,),
-                Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 15),
-                        child: TextField(
-                          decoration: InputDecoration(
-                            hintText: 'Type a message......',
-                            border: InputBorder.none
-                          ),
-                        ),
-                      ),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 15, right: 60),
+                child: Expanded(
+                  child: Container(
+                    height: 35,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                      borderRadius: BorderRadius.circular(15),
                     ),
-                SizedBox(width: 20,),
-                Icon(Icons.pin_drop_outlined, size: 15, color: Colors.red,),
-                SizedBox(width: 1,),
-                Padding(
-                  padding: const EdgeInsets.only(right: 8),
-                  child: Icon(Icons.camera_alt_outlined, size: 20, color: Colors.red,),
+                    child: Row(children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Icon(Icons.emoji_emotions_outlined, size:20,color:  Colors.red,),
+                      ),
+                      SizedBox(width: 20,),
+                      Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 15),
+                              child: TextField(
+                                decoration: InputDecoration(
+                                  hintText: 'Type a message......',
+                                  border: InputBorder.none
+                                ),
+                              ),
+                            ),
+                          ),
+                      SizedBox(width: 20,),
+                      Icon(Icons.pin_drop_outlined, size: 15, color: Colors.red,),
+                      SizedBox(width: 1,),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: Icon(Icons.camera_alt_outlined, size: 20, color: Colors.red,),
+                      ),
+                    ],),
+                  ),
                 ),
-              ],),
-            ),
+              ),
+              CircleAvatar(
+                child: Icon(Icons.mic, color: Colors.white,),
+                radius: 15,
+                backgroundColor: Colors.red,
+              )
+            ],
           ),
         ],
       ),

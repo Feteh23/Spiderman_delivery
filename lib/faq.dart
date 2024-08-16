@@ -72,7 +72,7 @@ class Faq extends StatelessWidget {
             Padding(
             padding: const EdgeInsets.only(left:20 , right: 20),
             child: Container(
-              height: 35,
+              height: 100,
               width: double.infinity,
               decoration: BoxDecoration(color: Colors.grey[200],
               borderRadius: BorderRadius.circular(5),
@@ -98,11 +98,20 @@ class Faq extends StatelessWidget {
                               builder: (BuildContext context) => Faq(),
                             ));
                           },
-                          child: Row(
+                          child: Column(
                             children: [
-                              Text('How long does it takes to deliver a product?', style: TextStyle(fontSize: 12, color: Colors.black,),textAlign: TextAlign.right),
-                              SizedBox(width: 16,),
-                              Icon(Icons.arrow_drop_down, color: Colors.red,)
+                              Row(
+                                children: [
+                                  Text('How long does it takes to deliver a product?', style: TextStyle(fontSize: 12, color: Colors.black,),textAlign: TextAlign.right),
+                                  SizedBox(width: 16,),
+                                  Icon(Icons.arrow_drop_up, color: Colors.red,)
+                                ],
+                              ),
+                              SizedBox(height: 20,),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 63),
+                                child: Text('it takes atmost 30mins per delivery.',),
+                              )
                             ],
                           ),
                           

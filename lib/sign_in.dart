@@ -73,11 +73,14 @@ class _SignInState extends State<SignIn> {
                       Icon(Icons.phone, size: 20,),
                       SizedBox(width: 20,),
                       Expanded(
-                        child: TextField(
-                          keyboardType: TextInputType.number,
-                          decoration: InputDecoration(
-                            hintText: 'Phone Number',
-                            border: InputBorder.none
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 15),
+                          child: TextField(
+                            keyboardType: TextInputType.number,
+                            decoration: InputDecoration(
+                              hintText: 'Phone Number',
+                              border: InputBorder.none
+                            ),
                           ),
                         ),
                       )
@@ -113,11 +116,14 @@ class _SignInState extends State<SignIn> {
                       Icon(Icons.lock_clock_rounded),
                       SizedBox(width: 20,),
                       Expanded(
-                        child: TextField(
-                          
-                          decoration: InputDecoration(
-                            hintText: 'Password',
-                            border: InputBorder.none,
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 10),
+                          child: TextField(
+                            
+                            decoration: InputDecoration(
+                              hintText: 'Password',
+                              border: InputBorder.none,
+                            ),
                           ),
                         ),
                       ),

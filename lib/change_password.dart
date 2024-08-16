@@ -68,17 +68,21 @@ class _ChangePasswordState extends State<ChangePassword> {
                 padding: const EdgeInsets.only(left: 25, top: 5),
                 child: Row(
                   children: [
-                    Icon(Icons.message, size: 15,),
+                    Icon(Icons.lock, size: 25,),
                     SizedBox(width: 20,),
                     Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: 'old Password',
-                          border: InputBorder.none
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: TextField(
+                          obscureText: _isobscured,
+                          decoration: InputDecoration(
+                            hintText: 'old Password...',
+                            border: InputBorder.none
+                          ),
                         ),
                       ),
                     ),
-                    SizedBox(width: 100,),
+                    SizedBox(width: 50,),
                     IconButton(onPressed: (){
                       setState(() {
                         _isobscured = !_isobscured;
@@ -112,17 +116,21 @@ class _ChangePasswordState extends State<ChangePassword> {
                 padding: const EdgeInsets.only(left: 25, top: 5),
                 child: Row(
                   children: [
-                    Icon(Icons.message, size: 15,),
+                    Icon(Icons.lock, size: 25,),
                     SizedBox(width: 20,),
                     Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: 'New Password',
-                          border: InputBorder.none
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: TextField(
+                          obscureText: _istogled,
+                          decoration: InputDecoration(
+                            hintText: 'New Password...',
+                            border: InputBorder.none
+                          ),
                         ),
                       ),
                     ),
-                    SizedBox(width: 100,),
+                    SizedBox(width: 50,),
                     IconButton(onPressed: (){
                       setState(() {
                         _istogled = !_istogled;
@@ -156,17 +164,21 @@ class _ChangePasswordState extends State<ChangePassword> {
                 padding: const EdgeInsets.only(left: 25, top: 5),
                 child: Row(
                   children: [
-                    Icon(Icons.message, size: 15,),
+                    Icon(Icons.lock, size: 25,),
                     SizedBox(width: 20,),
                     Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: 'Confirm Password',
-                          border: InputBorder.none
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: TextField(
+                          obscureText: _istouched,
+                          decoration: InputDecoration(
+                            hintText: 'Confirm Password...',
+                            border: InputBorder.none
+                          ),
                         ),
                       ),
                     ),
-                    SizedBox(width: 100,),
+                    SizedBox(width: 40,),
                     IconButton(onPressed: (){
                       setState(() {
                         _istouched = !_istouched;

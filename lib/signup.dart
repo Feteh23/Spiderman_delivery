@@ -74,10 +74,13 @@ class _SignInState extends State<SignUp> {
                     ),
                      SizedBox(width: 20,),
                     Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: 'Name',
-                          border: InputBorder.none
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: 'Name',
+                            border: InputBorder.none
+                          ),
                         ),
                       ),
                     )
@@ -110,13 +113,16 @@ class _SignInState extends State<SignUp> {
                 padding: const EdgeInsets.only(left: 25, top: 5),
                 child: Row(
                   children: [
-                    Icon(Icons.message, size: 15,),
+                    Icon(Icons.email, size: 25,),
                     SizedBox(width: 20,),
                     Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: 'Email',
-                          border: InputBorder.none
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: 'Email',
+                            border: InputBorder.none
+                          ),
                         ),
                       ),
                     ),
@@ -153,10 +159,13 @@ class _SignInState extends State<SignUp> {
                     Icon(Icons.phone, size: 20,),
                     SizedBox(width: 20,),
                     Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: 'Phone Number',
-                          border: InputBorder.none
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: 'Phone Number',
+                            border: InputBorder.none
+                          ),
                         ),
                       ),
                     ),
@@ -189,13 +198,16 @@ class _SignInState extends State<SignUp> {
                 padding: const EdgeInsets.only(left: 25, top: 5),
                 child: Row(
                   children: [
-                    Icon(Icons.message, size: 15,),
+                    Icon(Icons.lock, size: 25,),
                     SizedBox(width: 20,),
                     Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: 'Password',
-                          border: InputBorder.none
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: 'Password',
+                            border: InputBorder.none
+                          ),
                         ),
                       ),
                     ),
@@ -218,7 +230,7 @@ class _SignInState extends State<SignUp> {
             padding: const EdgeInsets.only(left: 25, right: 25),
             child: Container(
                    
-                    height: 35,
+                    height: 40,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),

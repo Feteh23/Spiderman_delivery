@@ -70,14 +70,17 @@ class _SignInState extends State<SignIn> {
                   padding: const EdgeInsets.only(left: 25, right: 5),
                   child: Row(
                     children: [
-                      Icon(Icons.phone, size: 15,),
+                      Icon(Icons.phone, size: 20,),
                       SizedBox(width: 20,),
                       Expanded(
-                        child: TextField(
-                          keyboardType: TextInputType.number,
-                          decoration: InputDecoration(
-                            hintText: 'Phone Number',
-                            border: InputBorder.none
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 5),
+                          child: TextField(
+                            keyboardType: TextInputType.number,
+                            decoration: InputDecoration(
+                              hintText: 'Phone Number',
+                              border: InputBorder.none
+                            ),
                           ),
                         ),
                       )
@@ -107,16 +110,20 @@ class _SignInState extends State<SignIn> {
                 ]
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 5, left: 25),
+                  padding: const EdgeInsets.only(left: 25),
                   child: Row(
                     children: [
                       Icon(Icons.message),
                       SizedBox(width: 20,),
                       Expanded(
-                        child: TextField(
-                          decoration: InputDecoration(
-                            hintText: 'Password',
-                            border: InputBorder.none,
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 5),
+                          child: TextField(
+                            obscureText: _isobscured,
+                            decoration: InputDecoration(
+                              hintText: 'Password',
+                              border: InputBorder.none,
+                            ),
                           ),
                         ),
                       ),

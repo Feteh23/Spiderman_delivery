@@ -74,14 +74,17 @@ class _SignInState extends State<ResetPassword> {
                 padding: const EdgeInsets.only(left:25 , top: 5),
                 child: Row(
                   children: [
-                    Icon(Icons.message, size: 15,),
+                    Icon(Icons.email, size: 25,),
                     SizedBox(width: 20,),
                     Expanded(
-                      child: TextField(
-                        keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
-                          hintText: 'Enter Email',
-                          border: InputBorder.none,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: TextField(
+                          keyboardType: TextInputType.number,
+                          decoration: InputDecoration(
+                            hintText: 'Enter Email',
+                            border: InputBorder.none,
+                          ),
                         ),
                       ),
                     )
